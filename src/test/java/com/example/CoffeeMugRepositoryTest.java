@@ -55,7 +55,6 @@ class CoffeeMugRepositoryTest {
 
         // THEN
         assertThat(actual).isPresent();
-        assertThat(actual.get()).isEqualTo(coffeeMug);
         assertThat(actual.get().getName()).isNull();
         assertThat(actual.get().getSize()).isEqualToIgnoringCase("large");
         assertThat(actual.get().getFilled()).isTrue();

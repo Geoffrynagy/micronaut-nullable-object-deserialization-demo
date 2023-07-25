@@ -16,7 +16,6 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut.aws:micronaut-aws-lambda-events-serde")
@@ -25,7 +24,6 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut.aws:micronaut-function-aws")
 
-    compileOnly("org.projectlombok:lombok")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.mongodb:mongodb-driver-sync")
 
